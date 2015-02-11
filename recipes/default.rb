@@ -128,11 +128,11 @@ end
 download_url = ""
 case node["languages"]["ruby"]["host_cpu"]
 when "x86_64"
-  download_url << "http://www.bittorrent.com/sync/downloads/complete/os/x64"
+  download_url << "http://download.getsyncapp.com/endpoint/btsync/os/linux-x64/track/stable"
 when "i686"
-  download_url << "http://www.bittorrent.com/sync/downloads/complete/os/i386"
+  download_url << "http://download.getsyncapp.com/endpoint/btsync/os/linux-i386/track/stable"
 when "arm"
-    download_url << "http://www.bittorrent.com/sync/downloads/complete/os/arm"
+  download_url << "http://download.getsyncapp.com/endpoint/btsync/os/linux-arm/track/stable"
 end
 
 remote_file "#{Chef::Config[:file_cache_path]}/btsync.tar.gz" do
